@@ -1,9 +1,7 @@
-To lessen the number of github repos I have, I've combined my HtDP and SICP repos into this one repo. 
+* About
+
+To lessen the number of github repos I have, I combined my HtDP and SICP repos into this one repo. They are found on the "solutions" directory. I'm also using this repo to play with some toy Racket/Lisp projects, they are found on the "toys" directory
 
 HtDP - contains my solutions for the book How to Design Programs
 
 SICP - contains my solutions for the book Structure and Interpretation of Computer Programs
-
-In the future, once I've finished significant parts of the book, I'll likely use this repo again for advanced studies on Racket/Lisp/Scheme using some of the uni courses from the authors of the books. 
-
-Also: I'll be using this repo for future lisp studies as well.
