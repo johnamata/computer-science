@@ -20,7 +20,7 @@
 	(else else-clause)))
 
 
-;; square root program rewrited
+;; square root program rewritten
 (define (sqrt-iter guess x)
   (new-if (good-enough? guess x)
 	  guess
