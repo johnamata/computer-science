@@ -1,10 +1,11 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname composing-functions) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
+;; COMPOSITION and AUXILIARY FUNCTION
 ; typically, programs consist of a main function
 ; as well as other programs that turns the output
 ; of 1 function as input for another
-; this is called COMPOSITION
+; this is called COMPOSITION, in analogy to algebra
 ; and the additional functions are called
 ; AUXILIARY FUNCTIONS
 
@@ -19,7 +20,7 @@
    ))
 
 (define (opening fst)
-  (string-append "Dear " fast ","))
+  (string-append "Dear " fst ","))
 
 (define (body fst lst)
   (string-append
@@ -33,3 +34,7 @@
    "\n\n"
    signature-name
    "\n"))
+
+(letter "Matthew" "Fisler" "Felleisen")
+;; the above command will output:
+; "Dear Matthew,\n\nWe have discovered that all people with the\nlast name Fisler have won our lottery. So, \nMatthew, hurry and pick up your prize.\n\nSincerely,\n\nFelleisen\n"
