@@ -3,6 +3,8 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname composing-functions) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
 (require 2htdp/batch-io)
 
+;; a batch program
+
 ;; COMPOSITION and AUXILIARY FUNCTION
 ; typically, programs consist of a main function
 ; as well as other programs that turns the output
