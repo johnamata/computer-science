@@ -1,0 +1,35 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname composing-functions) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
+; typically, programs consist of a main function
+; as well as other programs that turns the output
+; of 1 function as input for another
+; this is called COMPOSITION
+; and the additional functions are called
+; AUXILIARY FUNCTIONS
+
+(define (letter fst lst signature-name)
+  ;^main function that has 3 auxiliary functions
+  (string-append
+   (opening fst) ; function 1
+   "\n\n"
+   (body fst lst) ; function 2
+   "\n\n"
+   (closing signature-name) ;function 3
+   ))
+
+(define (opening fst)
+  (string-append "Dear " fast ","))
+
+(define (body fst lst)
+  (string-append
+   "We have discovered that all people with the" "\n"
+   "last name " lst " have won our lottery. So, " "\n"
+   fst ", " "hurry and pick up your prize."))
+
+(define (closing signature-name)
+  (string-append
+   "Sincerely,"
+   "\n\n"
+   signature-name
+   "\n"))
