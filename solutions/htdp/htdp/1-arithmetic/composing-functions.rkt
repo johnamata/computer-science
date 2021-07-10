@@ -1,6 +1,8 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname composing-functions) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
+(require 2htdp/batch-io)
+
 ;; COMPOSITION and AUXILIARY FUNCTION
 ; typically, programs consist of a main function
 ; as well as other programs that turns the output
@@ -36,5 +38,23 @@
    "\n"))
 
 (letter "Matthew" "Fisler" "Felleisen")
-;; the above command will output:
+;; the above command will output a long string:
 ; "Dear Matthew,\n\nWe have discovered that all people with the\nlast name Fisler have won our lottery. So, \nMatthew, hurry and pick up your prize.\n\nSincerely,\n\nFelleisen\n"
+; the \n means newline
+
+; but if we add write-file by adding the following code to the program
+;(require 2htdp/batch-io)
+; we can go to the console and type
+;(write-file 'stdout (letter "Matt" "Fiss" "Fell"))
+; and it will output:
+;
+;Dear Matt,
+;
+;We have discovered that all people with the
+;last name Fiss have won our lottery. So, 
+;Matt, hurry and pick up your prize.
+;
+;Sincerely,
+;
+;Fell
+;'stdout
