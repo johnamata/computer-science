@@ -1,5 +1,7 @@
 
-* Arithmetic
+my notes for the book "How to Design Programs
+
+* Fixed Sized Data
 ** Functions and Programs
 *** COMPOSITION and AUXILIARY
 - Typically, programs consist of a main definition and several other functionstypically, programs consist of a main function as well as other programs that turns the output of 1 function as input for another
@@ -8,4 +10,4 @@
 *** DEFINE ONE FUNCTION PER TASK
 - one function per task and one main function that puts it all together
 - to get small programs and composition that's easy to understand
-- small functions are easier to work with than large ones
+- organized collection of small functions are easier to work with than a large MONOLITHIC block
