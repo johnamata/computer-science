@@ -1,5 +1,5 @@
 
-my notes for the book "How to Design Programs
+my notes for the book "How to Design Programs" 2nd Edition
 
 * Fixed Sized Data
 ** Functions and Programs
@@ -11,3 +11,6 @@ my notes for the book "How to Design Programs
 - one function per task and one main function that puts it all together
 - to get small programs and composition that's easy to understand
 - organized collection of small functions are easier to work with than a large MONOLITHIC block
+- see page 60 for an example of how a problem was broken down
+
+* Arbitrarily Large Data
